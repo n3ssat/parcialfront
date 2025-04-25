@@ -31,7 +31,7 @@
             };
         
             try {
-            const response = await fetch("http://localhost:5000/api/sales/create", {
+            const response = await fetch("http://parcialback-five.vercel.app/api/sales/create", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(saleData)

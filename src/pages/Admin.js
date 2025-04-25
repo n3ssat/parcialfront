@@ -6,7 +6,7 @@ const Admin = () => {
     useEffect(() => {
         const fetchVentas = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/sales/");
+                const response = await fetch("http://parcialback-five.vercel.app/api/sales/");
                 const data = await response.json();
                 if (response.ok) {
                     setVentas(data);
