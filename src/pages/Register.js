@@ -14,7 +14,7 @@ const Register = () => {
 
     const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://parcialback-five.vercel.app/api/users/register', {
+    const response = await fetch('https://parcialback-five.vercel.app/api/users/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
